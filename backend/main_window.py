@@ -43,7 +43,10 @@ class application(tk.Tk):
         self.attributes("-fullscreen", True)
         def n_window(event):
             self.attributes('-fullscreen' , False)
+        def f_window(event):
+            self.attributes('-fullscreen' , True)
         self.bind('<Escape>' , n_window )
+        self.bind('<F11>' , f_window)
         # container to be used to manage pages
         self.container = tk.Frame(self)  # basically parent- all widgets for all future pages will be placed here
         self.container.pack(side='top',
