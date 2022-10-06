@@ -39,7 +39,11 @@ class application(tk.Tk):
         self.entries = {}  # dictionary to hold entries for all ranges.in tkinter var format
         self.font = 'Apple Braille' #font to be used
         tk.Tk.__init__(self, *args, **kwargs)
-        self.geometry("{0}x{1}+0+0".format(self.winfo_screenwidth(), self.winfo_screenheight()))
+        self.state('zoomed')
+        self.attributes("-fullscreen", True)
+        def n_window(event):
+            self.attributes('-fullscreen' , False)
+        self.bind('<Escape>' , n_window )
         # container to be used to manage pages
         self.container = tk.Frame(self)  # basically parent- all widgets for all future pages will be placed here
         self.container.pack(side='top',
