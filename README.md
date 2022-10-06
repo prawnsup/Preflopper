@@ -9,11 +9,14 @@
     git install
  ```
  ** For mac-os , newest version of mac-os has had problems with creating a disk-image so no executable option like in windows.**
-    ```
+ 
+ 
+    
       git clone https://github.com/libgit2/libgit2 #clones directory
       python -m ensurepip #installs pip
       pip install -r REQUIREMENTS.txt
-    ```
+      python main.py
+    
       
 ## Range editing
 
