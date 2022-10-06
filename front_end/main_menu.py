@@ -1,6 +1,6 @@
 import tkinter as tk
 from PIL import ImageTk, Image
-
+import os
 class main_menu(tk.Frame):
     def __init__(self, parent, controller):
         controller.initialisation()
@@ -8,7 +8,7 @@ class main_menu(tk.Frame):
         self['bg'] = 'black'
         self.grid_columnconfigure(0, weight=1)
         self.grid_rowconfigure(0, weight=1)
-        image = Image.open(controller.c_d + "/images/chips.png")
+        image = Image.open(os.path.join(controller.c_d , 'images' , 'chips.png'))
         width, height = image.size
         canvas = tk.Canvas(self,
                            width=width,

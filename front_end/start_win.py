@@ -1,7 +1,6 @@
 import tkinter as tk
 from PIL import ImageTk , Image
-import pandas as pd
-
+import os
 
 class game_window(tk.Frame):
     #starts the main window with the cards and the option to raise or fold
@@ -11,7 +10,7 @@ class game_window(tk.Frame):
         self.grid_rowconfigure(0,weight=1)
         self.grid_columnconfigure(0,weight =1)
         controller.card_gen() #calls a function from the controller which generates new cards (and card paths)
-        card1 = Image.open(controller.c_d + "/"+controller.card1_path) #opens card1 image according to the path
+        card1 = Image.open(os.path.join(controller.c_d,controller.card1_path)) #opens card1 image according to the path
         card2= Image.open(controller.c_d +"/"+controller.card2_path)#opens card2 image according to the path
         controller.position() #generates random position
 

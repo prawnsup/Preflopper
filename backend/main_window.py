@@ -10,8 +10,6 @@ from PIL import ImageTk , Image
 from front_end.start_win import game_window
 from front_end.main_menu import main_menu
 from front_end.range_win import ranges_win
-##creating a frame for border color
-##creating a frame for border color
 from backend.ranges import ranges
 from backend.card_gen import random_cards
 
@@ -271,8 +269,8 @@ class application(tk.Tk):
         suits= ('Spades Clubs Heart Diamond').split(' ')
         rng= random_cards(numbers,suits)
         rng.card()
-        self.card1_path= 'images/'+str(rng.card1[1]) + '/'+str(rng.card1[0])+'.png' #generates paths to these cards
-        self.card2_path='images/'+str(rng.card2[1]) + '/'+str(rng.card2[0])+'.png'
+        self.card1_path= os.path.join('images',str(rng.card1[1]),str(rng.card1[0])+'.png') #generates paths to these cards
+        self.card2_path=os.path.join('images',str(rng.card2[1]),str(rng.card2[0])+'.png')
         self.card1=rng.card1[0]
         self.card2=rng.card2[0]
         self.cards1= self.card1 + self.card2 # combines the two separate cards in two seperate combinations since, since cards can only be read as A2s , instead of 2As , higher value first
