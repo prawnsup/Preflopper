@@ -4,10 +4,8 @@
 <img width="800" alt="Screenshot 2022-10-06 at 17 20 57" src="https://user-images.githubusercontent.com/75863764/194367105-ea90d3d0-c17f-42f1-a185-7df0367fd401.png">
 
 ## Installation
- **For windows download dist file either manually or from the terminal**
- ```
-    git install 
- ```
+ **For windows download dist file manually right clicking the folder. Then run main.exe**
+ 
  ** For mac-os , newest version of mac-os has had problems with creating a disk-image so no executable option like in windows.Python 3+ required**
  
  
