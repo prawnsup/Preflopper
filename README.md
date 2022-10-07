@@ -6,7 +6,7 @@
 ## Installation
  **For windows download dist file manually right clicking the folder. Then run main.exe**
  
- ** For mac-os , newest version of mac-os has had problems with creating a disk-image so no executable option like in windows.Python 3+ required**
+ **For mac-os , newest version of mac-os has had problems with creating a disk-image so no executable option like in windows.Python required**
  
  
     
