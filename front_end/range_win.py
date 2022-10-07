@@ -75,24 +75,16 @@ class ranges_win(tk.Frame):
                               controller.back_home,
                               self.winfo_screenwidth(),
                               self,
+                              row=10,
+                              column=0
+                              )
+        controller.button_gen('lightgreen',
+                              'white',
+                              'SAVE',
+                              controller.save_ranges,
+                              self.winfo_screenwidth(),
+                              self,
                               row=11,
                               column=0
                               )
-        controller.button_gen('lightgreen',
-                              'white',
-                              'SAVE',
-                              controller.save_ranges,
-                              self.winfo_screenwidth(),
-                              self,
-                              row=13,
-                              column=0
-                              )
-        controller.button_gen('lightgreen',
-                              'white',
-                              'SAVE',
-                              controller.save_ranges,
-                              self.winfo_screenwidth(),
-                              self,
-                              row=13,
-                              column=0
-        )
+

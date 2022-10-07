@@ -40,13 +40,22 @@ class main_menu(tk.Frame):
                               row=2,
                               column=0
                               )
+        controller.button_gen('#c4d600',
+                              '#fcf7d2',
+                              'CONTINUE',
+                              controller.continue_button_click,
+                              self.winfo_screenwidth(),
+                              self,
+                              row=3,
+                              column=0
+                              )
         controller.button_gen('#FF4040',
                               '#FFC0C0',
                               'RANGES',
                               controller.range_button_click,
                               self.winfo_screenwidth(),
                               self,
-                              row=3,
+                              row=4,
                               column=0
                               )
 

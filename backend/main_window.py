@@ -62,7 +62,7 @@ class application(tk.Tk):
         main_win_f = main_menu(parent=self.container,
                                controller=self)
         self.frames['main_menu'] = main_win_f
-        # creates a frame based on the class main_menu, with container as
+        # creates a frame based on the class main_menu, with container
         main_win_f.grid(row=0, column=0, sticky='nsew')
 
         # parent and start_win(self) as controller
@@ -112,8 +112,13 @@ class application(tk.Tk):
         self.frames['ranges_win'].tkraise()
 
     def start_button_click(self, event):
-        self.frames['game_window_f'].tkraise()
+        self.score=0
+        self.total=0
+        self.reset('x')
 
+    def continue_button_click(self, event):
+
+        self.frames['game_window_f'].tkraise()
     # function to process range values from user input into dataframe
 
     def data_proc(self, range_inputs):
@@ -320,7 +325,6 @@ class application(tk.Tk):
         #function for the raise button , increases score by 1 if correct action.Resets game with updated value with self.reset('x')
         x= self.checker('raise')
         if x== False:
-
             self.reset('x')
         else:
             self.score=self.score+1
