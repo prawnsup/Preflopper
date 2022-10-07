@@ -6,13 +6,13 @@
 ## Installation
  **For windows download dist file either manually or from the terminal**
  ```
-    git install
+    git install 
  ```
- ** For mac-os , newest version of mac-os has had problems with creating a disk-image so no executable option like in windows.**
+ ** For mac-os , newest version of mac-os has had problems with creating a disk-image so no executable option like in windows.Python 3+ required**
  
  
     
-      git clone https://github.com/libgit2/libgit2 #clones directory
+      git clone https://github.com/prawnsup/Preflopper.git #clones directory
       python -m ensurepip #installs pip
       pip install -r REQUIREMENTS.txt
       python main.py
