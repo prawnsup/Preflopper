@@ -46,9 +46,9 @@
 
 ## Contributions
 
-** Create a branch , and after making commits just open a pull request :) **
+**Create a branch , and after making commits just open a pull request :)**
 
-#Future updates
+## Future updates
 
 **Add blind vs blind , add preflop raising after RFI , 3-bets and 4-bets. DMG for Mac-os**
 
