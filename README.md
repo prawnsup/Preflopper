@@ -4,7 +4,7 @@
 <img width="800" alt="Screenshot 2022-10-06 at 17 20 57" src="https://user-images.githubusercontent.com/75863764/194367105-ea90d3d0-c17f-42f1-a185-7df0367fd401.png">
 
 ## Installation
- **For windows download preflopper zip from the releases section.**
+ **For windows download preflopper zip from the releases section and then run main.exe.**
  
  **For mac-os , newest version of mac-os has had problems with creating a disk-image so no executable option like in windows.Python required**
  
