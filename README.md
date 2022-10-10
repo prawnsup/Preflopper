@@ -12,6 +12,7 @@
     
       git clone https://github.com/prawnsup/Preflopper.git #clones directory
       python -m ensurepip #installs pip
+      cd Preflopper
       pip install -r REQUIREMENTS.txt
       python main.py
     
